@@ -8,4 +8,16 @@ else{
 }
 
 let reverseString = (string) => string.split("").reverse().join("");
-module.exports = {stringLength,reverseString}
+
+class calcultor{
+    constructor(num1,num2){
+        this.num1=num1;
+        this.num2=num2;
+    }
+    add=()=> this.num1+this.num2;
+    sub=()=> this.num1-this.num2;
+    mul=()=> this.num1*this.num2;
+    div=()=> this.num1/this.num2;
+
+}
+module.exports = {stringLength,reverseString,calcultor}
