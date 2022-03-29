@@ -1,0 +1,19 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p",
+    "index": "mocha index.js",
+    "test": "mocha test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.2.2",
+    "modules": "^0.4.0",
+    "node-modules": "^1.0.1"
+  }
+}
