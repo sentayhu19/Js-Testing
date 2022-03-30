@@ -1,16 +1,24 @@
-const {stringLength,reverseString,calcultor} = require("./index");
+const {stringLength,reverseString,calcultor,capitalize} = require("./index");
 let num1=[];
 let num2=[];
 
 let result=stringLength("aa");
 result=reverseString("sentayhu");     
  console.log(result);
+test ('Shows Length of String ',()=>{
+expect(stringLength("aa")).toBe(2);
+});
+
+test('Reverse the string ',()=>{
+expect(reverseString("sentayhu")).toBe('uhyatnes');
+});
+
  for(let i=0;i<3;i++){
     num1[i]= Math.floor(Math.random() *100);
     num2[i]= Math.floor(Math.random() *100);
 }
 
- describe('Result : ', () => {
+ describe('Calculate number and get Result : ', () => {
      num1.forEach((n1)=>{
          
          num2.forEach((n2)=>{
@@ -31,4 +39,7 @@ result=reverseString("sentayhu");
      });
     
 
+ });
+ test('capitalize the first letter in a string ',()=>{
+expect(capitalize("super")).toBe("Super");
  });

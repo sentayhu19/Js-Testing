@@ -20,4 +20,13 @@ class calcultor{
     div=()=> this.num1/this.num2;
 
 }
-module.exports = {stringLength,reverseString,calcultor}
+
+let capitalize = (string) =>{
+    let result=string[0].toUpperCase();
+    for(let i=1;i<string.length;i++){
+        result+=string[i];
+    }
+    return result;
+
+} 
+module.exports = {stringLength,reverseString,calcultor,capitalize}
